@@ -226,6 +226,7 @@ defaults:
       comments: true
       share: true
       related: true
+      sitemap: false
   # _pages
   - scope:
       path: ""
@@ -233,6 +234,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      sitemap: false
   # _teaching
   - scope:
       path: ""
@@ -242,6 +244,7 @@ defaults:
       author_profile: true
       share: true
       comments: true
+      sitemap: false
   # _publications
   - scope:
       path: ""
@@ -251,6 +254,7 @@ defaults:
       author_profile: true
       share: true
       comments: true
+      sitemap: false
   # _portfolio
   - scope:
       path: ""
@@ -260,6 +264,7 @@ defaults:
       author_profile: true
       share: true
       comment: true
+      sitemap: false
   # _talks
   - scope:
       path: ""
@@ -268,6 +273,7 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+      sitemap: false
 
 
 # Sass/SCSS
