@@ -8,7 +8,7 @@ redirect_from:
 ---
 About me
 ======
-I am currently working in the Department of Mathematics at Jinan (暨南) University in Guangzhou, China. I got my PhD in applied mathematics at Sun Yat-sen University in 2022. Prior to that, I worked as an assistant engineer specializing in algorithm design at CBG, HUAWEI. My research focuses on developing advanced **non-i.i.d-oriented machine learning algorithms** for heterogeneous biomedical data, including multi-omics and single-cell data, as well as histopathological images.
+I am currently working in the Department of Mathematics at Jinan (暨南) University in Guangzhou, China. I got my PhD in applied mathematics at Sun Yat-sen University in 2022. Prior to that, I worked as an assistant engineer specializing in algorithm design at CBG, HUAWEI. My research focuses on developing advanced **non-i.i.d.-oriented machine learning algorithms** for heterogeneous biomedical data, including multi-omics and single-cell data, as well as histopathological images.
 
 Publications
 ======
