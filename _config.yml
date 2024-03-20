@@ -163,6 +163,7 @@ exclude:
   - assets/js/_main.js
   - assets/js/plugins
   - assets/js/vendor
+  - _pages/sitmap
   - config
   - gulpfile.js
   - log
