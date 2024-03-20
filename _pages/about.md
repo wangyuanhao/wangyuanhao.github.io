@@ -12,7 +12,7 @@ I am currently working in the Department of Mathematics at Jinan (暨南) Univer
 
 Publications
 ======
-* Yang J, Wang W, Zhang X. scSemiGCN: boosting cell-type annotation from noise-resistant graph neural networks with extremely limited supervision. *Bioinformatics*, 2024, 40(2): btae091
+* Yang J, Wang W, Zhang X. scSemiGCN: boosting cell-type annotation from noise-resistant graph neural networks with extremely limited supervision. *Bioinformatics*, 2024, 40(2): btae091.
 * Wang W, Zhang X, Dai D-Q. springD2A: capturing uncertainty in disease-drug association prediction. *Bioinformatics*, 2022, 38(5):1353–1360.
 * Zhang X, Wang W, Ren C-X, Dai D-Q. Learning representation for multiple biological networks via a robust graph regularized integration approach. *Briefings in Bioinformatics*, 2022, 23(1):bbab409.
 * Song W, Wang W, Dai D-Q. Subtype-WESLR: identifying cancer subtype with weighted ensemble sparse latent representation of multi-view data. *Briefings in Bioinformatics*, 2022, 23(1):bbab398.
