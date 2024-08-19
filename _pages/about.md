@@ -22,7 +22,7 @@ Publications
 
 Teaching
 ======
-* *Calculus I* for undergraduates (Autumn 2022, Autumn 2023)
+* *Calculus I* for undergraduates (Autumn 2022, Autumn 2023, [Autumn 2024](https://wangyuanhao.github.io/calculus_course_webpage/))
 * *Probability and Mathematical Statistics* for undergraduates (Spring 2023)
 * *High-dimensional Data Analysis* for MSc (Spring 2023, Spring 2024)
 * *Optimization Methods* for MSc (Spring 2024)
