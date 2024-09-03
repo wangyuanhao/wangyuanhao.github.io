@@ -12,7 +12,7 @@ I am currently working in the Department of Mathematics at Jinan (暨南) Univer
 
 Publications
 ======
-* Lai Z-R, **Wang W📧**. Invariant risk minimization is a total variation model. In: *41st  International Conference on Machine Learning (ICML 2024)* [[arXiv](https://arxiv.org/abs/2405.01389)] 
+* Lai Z-R, **Wang W📧**. Invariant risk minimization is a total variation model. In: *Proceedings of the 41st International Conference on Machine Learning (ICML 2024)*. Vienna, Austria: 2024: 3776-3794. 
 * Yang J, **Wang W📧**, Zhang X. scSemiGCN: boosting cell-type annotation from noise-resistant graph neural networks with extremely limited supervision. *Bioinformatics*, 2024, 40(2): btae091.
 * **Wang W**, Zhang X, Dai D-Q. springD2A: capturing uncertainty in disease-drug association prediction. *Bioinformatics*, 2022, 38(5):1353–1360.
 * Zhang X, **Wang W**, Ren C-X, Dai D-Q. Learning representation for multiple biological networks via a robust graph regularized integration approach. *Briefings in Bioinformatics*, 2022, 23(1):bbab409.
@@ -20,7 +20,7 @@ Publications
 *  Liu Y, **Wang W**, Ren C-X, Dai D-Q. MetaCon: meta contrastive learning for microsatellite instability detection. In: *24th International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)*. Strasbourg, France: 2021:267–276.
 * **Wang W**, Zhang X, Dai D-Q. DeFusion: a denoised network regularization framework for multi-omics integration. *Briefings in Bioinformatics*, 2021, 22(5):bbab057.
 
-📧Corresponding author
+📧Corresponding Author
 
 Teaching
 ======
