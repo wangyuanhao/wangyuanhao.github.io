@@ -44,21 +44,19 @@
 }
 
 .page__lead {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: $global-font-family;
   font-size: $type-size-4;
 }
 
 .page__content {
-  
+
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
-    font-family: 'Times New Roman', Times, serif;
   }
 
   p, li, dl {
     font-size: 1em;
-    font-family: 'Times New Roman', Times, serif;
   }
 
   /* paragraph indents */
@@ -94,7 +92,7 @@
 
   dd {
     margin-left: 1em;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: $sans-serif;
     font-size: $type-size-6;
   }
 
@@ -175,7 +173,7 @@
   margin: 0 auto;
   padding: 2px 5px;
   color: #fff;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: $caption-font-family;
   font-size: $type-size-7;
   background: #000;
   text-align: right;
@@ -230,7 +228,7 @@
 .page__meta {
   margin-top: 2em;
   color: mix(#fff, $gray, 25%);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: $sans-serif;
   font-size: $type-size-6;
 
   p {
