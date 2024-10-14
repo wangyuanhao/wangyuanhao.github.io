@@ -21,8 +21,8 @@ repository               : "wangyuanhao/wangyuanhao.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "IMG_6986.jpg"
-  name             : "Weiwen Wang"
+  avatar           : # "IMG_6986.jpg"
+  name             : # "Weiwen Wang"
   pronouns         : # example: "she/her"  
   bio              : #"Short biography for the left-hand sidebar"
   location         : #"Earth"
