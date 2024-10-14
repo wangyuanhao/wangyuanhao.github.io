@@ -13,14 +13,14 @@ $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
 /* system typefaces */
-$serif                      : Times, "Times New Roman";
+$serif                      : Times;
 /* $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;*/
-$monospace                  : Times, "Times New Roman";
-$sans-serif                 : Times, "Times New Roman";
+$monospace                  : Times;
+$sans-serif                 : Times;
 
 /* sans serif typefaces */
 $sans-serif-narrow          : $sans-serif;
-$helvetica                  : Times, "Times New Roman", Arial, sans-serif;
+$helvetica                  : Times;
 
 /* serif typefaces */
 $georgia                    : Georgia, serif;
