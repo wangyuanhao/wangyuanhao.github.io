@@ -8,7 +8,12 @@ redirect_from:
   - /about.html
 ---
 
-
+```
+I don't believe it. 
+-Luke Skywalker
+That is why you fail.
+-Yoda
+```
 
 <span style="font-family: 'Times', sans-serif; color:maroon">*Math for Life Science and Autonomous Machines with Humancare.*</span>
 
