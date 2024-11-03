@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-```
+```html
 I don't believe it. 
 -Luke Skywalker
 That is why you fail.
