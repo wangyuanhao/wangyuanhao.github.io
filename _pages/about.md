@@ -37,6 +37,6 @@ That is why you fail.
 ======
 * <span style="font-family: 'Times', sans-serif;">*Calculus I* for undergraduates (Autumn 2022, Autumn 2023, [Autumn 2024](https://wangyuanhao.github.io/calculus_course_webpage/))</span>
 * <span style="font-family: 'Times', sans-serif;">*Probability and Mathematical Statistics* for undergraduates (Spring 2023)</span>
-* <span style="font-family: 'Times', sans-serif;">*High-dimensional Data Analysis* for MSc (Spring 2023, Spring 2024)</span>
-* <span style="font-family: 'Times', sans-serif;">*Optimization Methods* for MSc (Spring 2024)</span>
+* <span style="font-family: 'Times', sans-serif;">*High-dimensional Data Analysis* for MSc (Spring 2023, Spring 2024, [Spring 2025](https://wangyuanhao.github.io/high_dim_stat/))</span>
+* <span style="font-family: 'Times', sans-serif;">*Optimization Methods* for MSc (Spring 2024, [Spring 2025](https://wangyuanhao.github.io/optimization_method_course_webpage/))</span>
 
