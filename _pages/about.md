@@ -8,8 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-<span style="font-family: 'Times', sans-serif; color:maroon">*Math for Life Science and Autonomous Machines with Humancare.*</span>
-
 <span style="font-family: 'Times', sans-serif;">I am currently working in the Department of Mathematics at Jinan (暨南) University in Guangzhou, China. I got my PhD in applied mathematics at Sun Yat-sen University in 2022. My research focuses on developing advanced **non-i.i.d.-oriented machine learning algorithms** for heterogeneous biomedical data, including multi-omics and single-cell data, as well as histopathological images.</span>
 
 <img src="../images/IMG_6986.jpg" style="zoom:50%;" class="center"/>
