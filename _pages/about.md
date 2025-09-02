@@ -24,7 +24,7 @@ redirect_from:
 
 <span style="font-family: 'Times', sans-serif;">Teaching</span>
 ======
-* <span style="font-family: 'Times', sans-serif;">*Advanced Mathematics* for undergraduates  (Autumn 2025, [Autumn 2025](https://wangyuanhao.github.io/advanced_mathematics/))</span>
+* <span style="font-family: 'Times', sans-serif;">*Advanced Mathematics I* for undergraduates  (Autumn 2025, [Autumn 2025](https://wangyuanhao.github.io/advanced_mathematics/))</span>
 
 * <span style="font-family: 'Times', sans-serif;">*High-dimensional Data Analysis* for MSc (Spring 2023, Spring 2024, [Spring 2025](https://wangyuanhao.github.io/high_dim_stat/))</span>
 
