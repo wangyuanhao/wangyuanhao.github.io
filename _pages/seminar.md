@@ -50,7 +50,7 @@
      * [Nature Methods](https://www.nature.com/nmeth/)
      * [Nature Computational Science](https://www.nature.com/natcomputsci)
 
-3. 关于论文阅读的工具: 重要、前沿的论文基本都是发表在英文刊物、会议上, 目前已经有较多的论文阅读工作辅助翻译、找到论文重点, 但应该注意工具只是起到辅助作用, 还是应该以自身求证、理解为主.
+3. 关于论文阅读的工具: 重要、前沿的论文基本都是发表在英文刊物、会议上, 目前已经有较多的论文阅读工具辅助翻译、找到论文重点, 但应该注意工具只是起到辅助作用, 还是应该以自身求证、理解为主.
 
    * Aminer(https://www.aminer.cn)
 

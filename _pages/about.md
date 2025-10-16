@@ -10,7 +10,7 @@ redirect_from:
 
 <span style="font-family: 'Times', sans-serif;">I am currently working in the Department of Mathematics at Jinan (暨南) University in Guangzhou, China. I got my PhD in applied mathematics at Sun Yat-sen University in 2022. My research focuses on developing advanced **non-i.i.d.-oriented machine learning algorithms** for heterogeneous biomedical data, including multi-omics and single-cell data, as well as histopathological images.</span>
 
-**<span style="font-family: 'Times', sans-serif;">[For students that want to work with me](https://github.com/wangyuanhao/wangyuanhao.github.io/blob/master/_pages/关于讨论班说明.md)</span>**
+**<span style="font-family: 'Times', sans-serif;">[For students that want to work with me](https://github.com/wangyuanhao/wangyuanhao.github.io/blob/master/_pages/seminar.md)</span>**
 
 <span style="font-family: 'Times', sans-serif;">Publications</span>
 ======
