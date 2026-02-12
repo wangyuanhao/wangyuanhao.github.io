@@ -15,6 +15,7 @@ redirect_from:
 <span style="font-family: 'Times', sans-serif;">Publications</span>
 ======
 
+* <span style="font-family: 'Times', sans-serif;">**Wang W📧**, Zhang X, Xiong Y. Transcriptomic-guided whole-slide image classification for molecular subtype identification. PLOS Computational Biology. 2026, 22(2): e1013950. [[code](https://github.com/wangyuanhao/TEMI)]</span>
 * <span style="font-family: 'Times', sans-serif;">Lai Z-R, **Wang W📧**. Invariant risk minimization is a total variation model. In: *Proceedings of the 41st International Conference on Machine Learning (ICML 2024)*. Vienna, Austria: 2024: 25913-25935. [[code](https://github.com/laizhr/IRM-TV)]</span>
 * <span style="font-family: 'Times', sans-serif;">Yang J, **Wang W📧**, Zhang X. scSemiGCN: boosting cell-type annotation from noise-resistant graph neural networks with extremely limited supervision. *Bioinformatics*, 2024, 40(2): btae091.[[code](https://github.com/Jane9898/scSemiGCN)]</span>
 * <span style="font-family: 'Times', sans-serif;">**Wang W**, Zhang X, Dai D-Q. springD2A: capturing uncertainty in disease-drug association prediction. *Bioinformatics*, 2022, 38(5):1353–1360.[[code](https://github.com/wangyuanhao/springD2A)]</span>
