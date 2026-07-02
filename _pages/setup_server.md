@@ -137,7 +137,7 @@ source /root/envs/myconda/bin/deactivate
 
 ### 其他说明
 
-* 其他package可以先下载wheel上传到离线服务器再激活后用pip安装；
+* 其他package可以先下载wheel上传到离线服务器再激活conda环境后用pip安装；
 * 其他配置方法包括直接下载好Anaconda/Miniconda和需要的package的wheel文件上传到离线服务器上安装；
 * 我的离线服务器版本是4090，也就是myconda_env.tar.gz的安装只是在4090的配置下成功，其他显卡未知；
 * 这些安装方法在每次配置环境的时候都很耗时间，而且计算资源归还后再申请使用需要重新安装一次，建议：
