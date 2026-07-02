@@ -19,7 +19,7 @@ conda pack -n myconda -o myconda_env.tar.gz
 conda pack -p /home/user/miniconda3/envs/myconda -o myconda_env.tar.gz
 ```
 
-* 这里提供我自己用的已经打包好的conda环境，下载地址： 激活码。 里面是python packages包括：
+* 这里提供我自己用的已经打包好的conda环境，如果需要使用可以直接跳过Step 1。下载地址 https://pan.baidu.com/s/1bq479HDpb0KDvsJmpAJ7mA ，提取码: jgxh 。里面的python packages包括：
 
 ```
 Package                  Version
@@ -94,8 +94,6 @@ yarl                     1.24.2
 
 ### Step 2: 将已经打包好的环境tar.gz压缩文件上传到离线服务器
 
-
-
 ```
 # Windows环境可以使用WinSCP软件，或者使用scp、rsync命令行，此处提供rsync的用法
 rsync -av --progress -e "ssh -p 端口号" your_local_path/myconda_env.tar.gz username@server_ip:/server/target/path/
@@ -108,7 +106,7 @@ rsync -av --progress -e "ssh -p 端口号" your_local_path/myconda_env.tar.gz us
 # /server/target/path/: 上传到离线服务器的路径，需要首先创建
 ```
 
-* 这里之间用WinSCP可以省去很多麻烦，端口号、用户名及服务器IP可以在衍生服务器系统“ssh连接”处看到。
+* 这里之间用WinSCP可以省去很多麻烦，端口号、用户名及服务器IP可以在衍生智算系统“ssh连接”处看到。
 
 ### Step 3: 在离线服务器上配置conda环境
 
@@ -139,8 +137,9 @@ source /root/envs/myconda/bin/deactivate
 
 ### 其他说明
 
-* 其他package可以先下载wheel上传到服务器再激活后用pip安装；
-* 其他配置方法包括直接下载好Anaconda/Minconda和需要的package的wheel文件上传到离线服务器上安装；
+* 其他package可以先下载wheel上传到离线服务器再激活后用pip安装；
+* 其他配置方法包括直接下载好Anaconda/Miniconda和需要的package的wheel文件上传到离线服务器上安装；
+* 我的离线服务器版本是4090，也就是myconda_env.tar.gz的安装只是在4090的配置下成功，其他显卡未知；
 * 这些安装方法在每次配置环境的时候都很耗时间，而且计算资源归还后再申请使用需要重新安装一次，建议：
   * 如果可行，现在的服务器应该具备访问外网的功能；
   * 现在的算力平台应该具备可选的配置基本深度学习/R等开发环境的系统镜像，实现创建容器资源时开发环境的一键配置，目前这些功能都是算力租用平台的基本功能了。
