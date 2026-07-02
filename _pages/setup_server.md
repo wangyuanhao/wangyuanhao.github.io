@@ -106,7 +106,7 @@ rsync -av --progress -e "ssh -p 端口号" your_local_path/myconda_env.tar.gz us
 # /server/target/path/: 上传到离线服务器的路径，需要首先创建
 ```
 
-* 这里之间用WinSCP可以省去很多麻烦，端口号、用户名及服务器IP可以在"衍生智算系统—>容器环境——>SSH登录"处看到。
+* 直接使用WinSCP可以省去很多麻烦，端口号、用户名及服务器IP可以在"衍生智算系统—>容器环境——>SSH登录"处看到。
 
 ### Step 3: 在离线服务器上配置conda环境
 
