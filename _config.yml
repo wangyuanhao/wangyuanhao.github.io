@@ -159,6 +159,7 @@ exclude:
   - Gruntfile.js
   - LICENSE
   - README
+  - blog/README.md
   - Rakefile
   - assets/js/_main.js
   - assets/js/plugins
@@ -236,6 +237,17 @@ defaults:
       layout: single
       author_profile: true
       sitemap: false
+  # Markdown articles stored directly in /blog (GitHub Pages compatible).
+  - scope:
+      path: "blog"
+      type: pages
+    values:
+      layout: blog-post
+      blog: true
+      lang: zh-CN
+      toc: true
+      math: true
+      sitemap: true
   # _teaching
   - scope:
       path: ""
@@ -341,4 +353,3 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-

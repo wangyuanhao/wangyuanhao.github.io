@@ -1,0 +1,31 @@
+---
+layout: blog-base
+title: "Blog"
+permalink: /blog/
+lang: zh-CN
+sitemap: true
+---
+<header class="blog-index-header">
+  <h1>Blog</h1>
+  <p>关于机器学习、科研与教学的笔记。</p>
+</header>
+
+{% assign articles = site.pages | where: 'blog', true | where_exp: 'article', 'article.published != false' | sort: 'date' | reverse %}
+{% assign previous_year = '' %}
+{% for article in articles %}
+  {% assign year = article.date | date: '%Y' %}
+  {% if year != previous_year %}
+    <h2 class="blog-year">{{ year }}</h2>
+    {% assign previous_year = year %}
+  {% endif %}
+  <article class="blog-entry">
+    <h3><a href="{{ article.url | relative_url }}">{{ article.title | escape }}</a></h3>
+    {% if article.excerpt %}<p class="blog-entry-excerpt">{{ article.excerpt | markdownify | strip_html }}</p>{% endif %}
+    <div class="blog-meta">
+      {% if article.date %}<time datetime="{{ article.date | date_to_xmlschema }}">{{ article.date | date: '%B %d, %Y' }}</time>{% endif %}
+      {% if article.tags.size > 0 %}<span>{{ article.tags | join: ' · ' | escape }}</span>{% endif %}
+    </div>
+  </article>
+{% else %}
+  <p class="blog-empty">文章整理中，敬请期待。</p>
+{% endfor %}
