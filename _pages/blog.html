@@ -2,12 +2,12 @@
 layout: blog-base
 title: "Blog"
 permalink: /blog/
-lang: zh-CN
+lang: en % zh-CN
 sitemap: true
 ---
 <header class="blog-index-header">
   <h1>Blog</h1>
-  <p>关于机器学习、科研与教学的笔记。</p>
+  <p>Notes and thoughts on my research (machine learning, high-dimensional probability, optimization, AI for biology, etc.)</p>
 </header>
 
 {% assign articles = site.pages | where: 'blog', true | where_exp: 'article', 'article.published != false' | sort: 'date' | reverse %}
@@ -27,5 +27,5 @@ sitemap: true
     </div>
   </article>
 {% else %}
-  <p class="blog-empty">文章整理中，敬请期待。</p>
+  <p class="blog-empty">Blog incoming</p>
 {% endfor %}
