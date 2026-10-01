@@ -8,7 +8,7 @@ lang: en
 published: true
 ---
 
-# SAGA: Algorithm and Convergence Proof Roadmap
+
 
 This blog presents the proof roadmap of theorectial analysis of SAGA (Defazio, Bach & Lacoste-Julien, 2014), a stochastic first-order optimization method for solving composite objectives.
 

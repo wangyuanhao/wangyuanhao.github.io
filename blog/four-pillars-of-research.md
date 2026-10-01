@@ -1,11 +1,12 @@
 ---
 title: "Four Pillars of My Research Routine"
 date: 2026-09-30
-excerpt: "Read and write, preserve problems, experiment honestly, and synthesize findings."
+excerpt: "The reasons that why I started writing blog"
+permalink: /blog/four-pillars-of-research/
 lang: en
 toc: false
 math: false
-published: false
+published: true
 ---
 
 1. **Write up what I read.**

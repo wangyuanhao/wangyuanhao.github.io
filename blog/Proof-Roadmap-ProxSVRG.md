@@ -8,8 +8,6 @@ lang: en
 published: true
 ---
 
-# Proof Roadmap of Convergence Analysis of Prox-SVRG
-
 This blog presents the proof roadmap of theorectial analysis of Prox-SVRG (Xiao & Zhang, 2014), a stochastic first-order optimization method for solving composite objectives.
 
 ## 1. Statement and goal
