@@ -23,3 +23,10 @@ main:
     
   # - title: "Guide"
   #  url: /markdown/
+
+# Navigation within the blog, its articles, and the archive.
+blog:
+  - title: "Blog"
+    url: /blog/
+  - title: "Archive"
+    url: /archives/

@@ -18,7 +18,7 @@ layout: compress
   </head>
   <body class="blog-page" id="blog-top">
     <a class="blog-skip-link" href="#blog-main">跳转到正文</a>
-    {% include masthead.html %}
+    {% include masthead.html navigation="blog" %}
     <main class="blog-shell" id="blog-main">
       {{ content }}
     </main>
@@ -26,6 +26,7 @@ layout: compress
       <span>© {{ site.time | date: '%Y' }} {{ site.name | escape }}</span>
       <a href="{{ '/' | relative_url }}">Home</a>
       <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      <a href="{{ '/archives/' | relative_url }}">Archive</a>
       <a href="#blog-top">↑ 返回顶部</a>
     </footer>
     {% include scripts.html %}

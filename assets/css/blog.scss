@@ -14,6 +14,8 @@
   .masthead__inner-wrap { max-width: 1040px; padding: 20px 24px; }
   .greedy-nav { background: transparent; }
   .greedy-nav a { color: #303030; font-size: 16px; }
+  .greedy-nav a[aria-current="page"] { font-weight: 600; }
+  .greedy-nav .visible-links a[aria-current="page"]::before { transform: scaleX(1); }
   .masthead__menu-item--lg a { font-size: 20px; }
 
   a { color: #2467a6; text-decoration: none; }
@@ -103,6 +105,20 @@
 .blog-entry h3 a { color: #303030; }
 .blog-entry-excerpt { margin: 0 0 14px; color: #666; font-size: 16px; }
 .blog-empty { padding: 32px 0; color: #777; }
+
+.blog-archive-year { margin: 40px 0; }
+.blog-archive-year + .blog-archive-year { padding-top: 30px; border-top: 1px solid #ebebeb; }
+.blog-archive-year-title { margin: 0 0 28px; font-size: 30px; scroll-margin-top: 24px; }
+.blog-archive-count { margin-left: 4px; color: #777; font-size: 13px; font-weight: 400; }
+.blog-archive-month { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 24px; margin-bottom: 30px; }
+.blog-archive-month-title { margin: 2px 0 0; font-size: 19px; font-weight: 500; scroll-margin-top: 24px; }
+.blog-archive-year-title a, .blog-archive-month-title a { color: #303030; }
+.blog-archive-posts { margin: 0; padding: 0; list-style: none; }
+.blog-archive-entry { margin: 0 0 24px; }
+.blog-archive-entry:last-child { margin-bottom: 0; }
+.blog-archive-entry h4 { margin: 0 0 6px; font-size: 18px; font-weight: 500; line-height: 1.5; overflow-wrap: anywhere; }
+.blog-archive-entry h4 a { color: #303030; }
+
 .blog-skip-link { position: absolute; top: -100px; left: 20px; z-index: 100; padding: 8px 14px; background: white; }
 .blog-skip-link:focus { top: 8px; }
 
@@ -118,6 +134,8 @@
   .blog-content h3 { font-size: 21px; }
   .blog-content .blog-heading-anchor { opacity: 1; }
   .blog-entry h3 { font-size: 22px; }
+  .blog-archive-month { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .blog-archive-year-title { font-size: 27px; }
 }
 
 @media print {
