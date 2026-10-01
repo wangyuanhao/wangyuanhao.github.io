@@ -10,7 +10,7 @@ published: true
 
 # Proof Roadmap of Convergence Analysis of Prox-SVRG
 
-This blog presents the proof roadmap of theorectial analysis of Prox-SVRG, a stochastic first-order optimization method for solving composite objectives.
+This blog presents the proof roadmap of theorectial analysis of Prox-SVRG (Xiao & Zhang, 2014), a stochastic first-order optimization method for solving composite objectives.
 
 ## 1. Statement and goal
 
@@ -130,7 +130,6 @@ can then be controlled by the variance of the gradient estimator.
 ## 4. Structure of the proof and role of each lemma
 
 * Step 1: Start from the squared-distance recursion
-
 $$
 \|x_k - x_*\|^2
 =
@@ -149,7 +148,7 @@ $$
 \eta^2 \|g_k\|^2.
 $$
 
-​		This step transforms the stochastic proximal update into an inequality involving objective gaps and the gradient estimation 		error.
+This step transforms the stochastic proximal update into an inequality involving objective gaps and the gradient estimation error.
 
 * Step 3: Identify the stochastic error term
 
@@ -157,7 +156,7 @@ $$
 -\Delta_k^T(x_k - x_*),
 $$
 
-​		which cannot be directly removed by taking conditional expectation because $x_k$ depends on the same randomness as $\Delta_k$.
+which cannot be directly removed by taking conditional expectation because $x_k$ depends on the same randomness as $\Delta_k$.
 
 * Step 4: Introduce the full-gradient proximal point
 
@@ -170,7 +169,7 @@ x_{k-1} - \eta \nabla F(x_{k-1})
 \right)
 $$
 
-​		and decompose
+and decompose
 
 $$
 -\Delta_k^T(x_k - x_*)
@@ -180,7 +179,7 @@ $$
 \Delta_k^T(x_k - \bar{x}_k).
 $$
 
-​		The first term vanishes after taking conditional expectation, while the second term is bounded by the variance of $v_k$.
+The first term vanishes after taking conditional expectation, while the second term is bounded by the variance of $v_k$.
 
 * Step 5: Bound $-\Delta_k^T(x_k - \bar{x}_k)$ by Cauchy–Schwarz inequality and non-expansiveness property of proximal mapping
 
@@ -199,7 +198,7 @@ $$
 \mathbb{E}\|\Delta_k\|^{2} = \mathbb{E}\left\|v_k - \nabla F(x_{k-1})\right\|^2.
 $$
 
-​		This is where the variance-reduction structure of SVRG enters the proof.
+This is where the variance-reduction structure of SVRG enters the proof.
 
 * Step 7: Combine the above estimates to obtain a one-step recursive inequality for
 
