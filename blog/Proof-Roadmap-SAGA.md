@@ -14,14 +14,14 @@ This blog presents the proof roadmap of theorectial analysis of SAGA (Defazio, B
 
 ##### SAGA update
 
-*Objective function*
+Objective function
 $$
 \min_{x \in \mathbb{R}^{d}} F(x)
 := f(x) + h(x)
 = \frac{1}{n}\sum_{i=1}^{n} f_i(x) + h(x).
 $$
 
-*Update*
+Update
 $$
 j \sim \operatorname{Unif}([n]).
 $$
