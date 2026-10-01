@@ -81,7 +81,7 @@ T^k
 &:= \frac{1}{n}\sum_{i=1}^{n} f_i(\phi_i^k) - f(x^*) \\
 &\quad - \frac{1}{n}\sum_{i=1}^{n}
 \left\langle f'_i(x^*), \phi_i^k - x^* \right\rangle
-+ c\|x^k - x^*\|.
++ c\|x^k - x^*\|^{2}.
 \end{aligned}
 $$
 
@@ -134,7 +134,7 @@ To enable the flexible choice of parameters, undetermined parameters are introdu
 
 * Step 3: Control the term $$c\mathbb{E}\|w^{k+1} - x^{k} + \gamma f'(x^{*})\|^{2}$$ by $$\mathbb{E}\|f'_{j}(\phi_{j}^{k}) - f_{j}'(x^{*})\|^{2}$$, $$\mathbb{E}\|f'_{j}(x^{k}) - f'_{j}(x^{*})\|^{2}$$, and $$\|f'(x^{k}) - f'(x^{*})\|^{2}$$ using Lemma 3. A free parameter $$\beta$$ is introduced as the role of $$c$$. The term $$\mathbb{E}\|f'_{j}(\phi_{j}^{k}) - f_{j}'(x^{*})\|^{2}$$ is bounded by Lemma 2.
 
-* Step 4: The negative of the difference between gradients $$-\|f'(x^{k}) - f'(x^{*})\|$$ is upper bounded by the difference of $$f(x^{k})$$ and its first-order Taylor approximation at $$x^{*}$$.
+* Step 4: The negative of the difference  $$-\|f'(x^{k}) - f'(x^{*})\|^{2}$$ is upper bounded by the difference of $$f(x^{k})$$ and its first-order Taylor approximation at $$x^{*}$$.
 
 * Step 5: Putting all the upper bounds together and exploiting the results of $$\mathbb{E}[T^{k+1}]$$, we have
 
@@ -158,13 +158,10 @@ $$
 \text{by the Lyapunov function by properly choosing the free parameters.}
 \\
 \uparrow
-\\
-\text{telescoping the one-step recursion over the inner loop}
-\\
-\uparrow
+
 \\
 \begin{array}{cc}
-\text{Lemma 3} & \text{Lemma 1}
+\text{Lemma 1} & \text{Lemma 3}
 \\
 & \uparrow
 \\
