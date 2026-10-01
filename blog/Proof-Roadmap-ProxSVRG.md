@@ -1,4 +1,4 @@
-```yaml
+---
 title: "Proof Roadmap of Convergence Analysis of Prox-SVRG"
 date: 2026-10-01
 permalink: /blog/Proof-Roadmap-ProxSVRG/
@@ -6,9 +6,7 @@ excerpt: "Proof roadmap of theorectial analysis of Prox-SVRG, a stochastic first
 tags: [Stochastic Optimization, Proof Roadmap]
 lang: en
 published: true
-```
-
-
+---
 
 # Proof Roadmap of Convergence Analysis of Prox-SVRG
 
