@@ -8,7 +8,7 @@ sitemap: true
 ---
 <header class="blog-archive-header">
   <h1>Archive</h1>
-  <p>Notes, proofs, and questions.</p>
+  <p>"Read some proofs, enjoy some inequalities, learn new tricks, and study the art of camouflaging one problem to look like another."</p>
 </header>
 
 {% assign articles = site.pages | where: 'blog', true | where_exp: 'article', 'article.published != false' | sort: 'date' | reverse %}
