@@ -6,40 +6,35 @@ lang: en
 body_class: blog-archive-page
 sitemap: true
 ---
-<header class="blog-index-header">
+<header class="blog-archive-header">
   <h1>Archive</h1>
+  <p>Notes, proofs, and questions.</p>
 </header>
 
 {% assign articles = site.pages | where: 'blog', true | where_exp: 'article', 'article.published != false' | sort: 'date' | reverse %}
 {% assign years = articles | group_by_exp: 'article', "article.date | date: '%Y'" %}
 {% for year in years %}
   <section class="blog-archive-year" aria-labelledby="archive-{{ year.name }}">
-    <h2 class="blog-archive-year-title" id="archive-{{ year.name }}">
-      <a href="#archive-{{ year.name }}">{{ year.name }}</a>
-      <sup class="blog-archive-count" aria-label="{{ year.items.size }} posts">{{ year.items.size }}</sup>
-    </h2>
-    {% assign months = year.items | group_by_exp: 'article', "article.date | date: '%m'" %}
-    {% for month in months %}
-      <section class="blog-archive-month" aria-labelledby="archive-{{ year.name }}-{{ month.name }}">
-        <h3 class="blog-archive-month-title" id="archive-{{ year.name }}-{{ month.name }}">
-          <a href="#archive-{{ year.name }}-{{ month.name }}">{{ month.items.first.date | date: '%B' }}</a>
-          <sup class="blog-archive-count" aria-label="{{ month.items.size }} posts">{{ month.items.size }}</sup>
-        </h3>
-        <ul class="blog-archive-posts">
-          {% for article in month.items %}
-            <li class="blog-archive-entry">
-              <article>
-                <h4><a href="{{ article.url | relative_url }}">{{ article.title | escape }}</a></h4>
-                <div class="blog-meta">
-                  <span>Date: <time datetime="{{ article.date | date_to_xmlschema }}">{{ article.date | date: '%B %-d, %Y' }}</time></span>
-                  <span>Author: {{ article.byline | default: site.name | escape }}</span>
-                </div>
-              </article>
-            </li>
-          {% endfor %}
-        </ul>
-      </section>
-    {% endfor %}
+    <header class="blog-archive-year-header">
+      <h2 class="blog-archive-year-title" id="archive-{{ year.name }}">
+        <a href="#archive-{{ year.name }}">{{ year.name }}</a>
+      </h2>
+      <p class="blog-archive-count">{{ year.items.size }} {% if year.items.size == 1 %}entry{% else %}entries{% endif %}</p>
+    </header>
+    <ol class="blog-archive-timeline" role="list">
+      {% for article in year.items %}
+        <li class="blog-archive-entry">
+          <article>
+            <time class="blog-archive-date" datetime="{{ article.date | date_to_xmlschema }}">{{ article.date | date: '%b %d' | upcase }}</time>
+            <h3><a href="{{ article.url | relative_url }}">{{ article.title | escape }}</a></h3>
+            {% assign topic_labels = article.tags | default: article.tag | join: ' · ' | strip %}
+            {% if topic_labels != empty %}
+              <p class="blog-archive-topics">{{ topic_labels | escape }}</p>
+            {% endif %}
+          </article>
+        </li>
+      {% endfor %}
+    </ol>
   </section>
 {% else %}
   <p class="blog-empty">No posts yet.</p>

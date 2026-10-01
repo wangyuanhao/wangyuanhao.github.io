@@ -106,31 +106,34 @@
 .blog-entry-excerpt { margin: 0 0 14px; color: #666; font-size: 16px; }
 .blog-empty { padding: 32px 0; color: #777; }
 
-/* Archive typography and separators follow the supplied Lil'Log reference. */
+/* A chronological research timeline, grouped by year. */
 .blog-archive-page {
   min-height: 100vh;
-  color: #1e1e1e;
-  background: #f5f5f5;
+  color: #242a2e;
+  background: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
-  .blog-shell { max-width: 960px; }
+  .blog-shell { max-width: 840px; }
   .masthead { background: transparent; }
-  h1, h2, h3, h4 { font-family: inherit; }
+  .blog-footer { justify-content: flex-start; max-width: 888px; margin: 0 auto; }
 }
-.blog-archive-year { margin: 40px 0; border-bottom: 2px solid #dedede; }
-.blog-archive-year-title { margin: 0 0 24px; font-size: 32px; font-weight: 700; line-height: 1.3; scroll-margin-top: 24px; }
-.blog-archive-count { margin-left: 4px; color: #777; font-size: 18px; font-weight: 700; }
-.blog-archive-month { display: grid; grid-template-columns: minmax(160px, 20%) minmax(0, 1fr); gap: 24px; padding: 20px 0 36px; }
-.blog-archive-month + .blog-archive-month { padding-top: 36px; border-top: 1px solid #dedede; }
-.blog-archive-month-title { margin: 5px 0 0; font-size: 24px; font-weight: 700; line-height: 1.5; white-space: nowrap; scroll-margin-top: 24px; }
-.blog-archive-year-title a, .blog-archive-month-title a { color: #1e1e1e; }
-.blog-archive-posts { margin: 0; padding: 0; list-style: none; }
-.blog-archive-entry { margin: 0 0 28px; }
-.blog-archive-entry:last-child { margin-bottom: 0; }
-.blog-archive-entry h4 { margin: 0 0 6px; font-size: 24px; font-weight: 400; line-height: 1.5; overflow-wrap: anywhere; }
-.blog-archive-entry h4 a { color: #1e1e1e; }
-.blog-archive-entry .blog-meta { color: #707070; font-size: 18px; font-weight: 400; line-height: 1.5; }
-.blog-archive-entry .blog-meta > * + *::before { padding: 0 5px; color: inherit; }
+.blog-archive-header { margin-bottom: 48px; }
+.blog-archive-header h1 { margin: 0; color: #242a2e; font-family: Georgia, "Times New Roman", serif; font-size: 48px; font-weight: 400; line-height: 1.12; letter-spacing: -0.04em; }
+.blog-archive-header p { margin: 12px 0 0; color: #727b80; font-size: 14px; line-height: 1.5; }
+.blog-archive-year { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 38px; }
+.blog-archive-year + .blog-archive-year { margin-top: 64px; }
+.blog-archive-year-title { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 54px; font-weight: 400; line-height: 1; letter-spacing: -0.05em; scroll-margin-top: 24px; }
+.blog-archive-year-title a { color: #315f54; }
+.blog-archive-count { margin: 12px 0 0; color: #727b80; font-size: 12px; line-height: 1.5; }
+.blog-archive-timeline { margin: 0; padding: 0 0 0 30px; border-left: 1px solid #e1e5e5; list-style: none; }
+.blog-archive-entry { position: relative; margin: 0; padding: 0 0 46px; }
+.blog-archive-entry:last-child { padding-bottom: 4px; }
+.blog-archive-entry::before { content: ""; position: absolute; top: 7px; left: -34px; width: 7px; height: 7px; border-radius: 50%; background: #315f54; }
+.blog-archive-date { display: block; margin-bottom: 10px; color: #727b80; font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; font-size: 12px; line-height: 1.5; }
+.blog-archive-entry h3 { margin: 0; font-family: inherit; font-size: 21px; font-weight: 500; line-height: 1.4; letter-spacing: -0.02em; overflow-wrap: anywhere; }
+.blog-archive-entry h3 a { color: #242a2e; text-underline-offset: 4px; }
+.blog-archive-entry h3 a:hover { color: #315f54; }
+.blog-archive-topics { margin: 10px 0 0; color: #727b80; font-size: 12px; line-height: 1.6; overflow-wrap: anywhere; }
 
 .blog-skip-link { position: absolute; top: -100px; left: 20px; z-index: 100; padding: 8px 14px; background: white; }
 .blog-skip-link:focus { top: 8px; }
@@ -147,11 +150,14 @@
   .blog-content h3 { font-size: 21px; }
   .blog-content .blog-heading-anchor { opacity: 1; }
   .blog-entry h3 { font-size: 22px; }
-  .blog-archive-month { grid-template-columns: minmax(0, 1fr); gap: 14px; padding: 16px 0 28px; }
-  .blog-archive-month + .blog-archive-month { padding-top: 28px; }
-  .blog-archive-month-title { margin-top: 0; }
-  .blog-archive-entry h4 { font-size: 22px; }
-  .blog-archive-entry .blog-meta { font-size: 15px; }
+  .blog-archive-header h1 { font-size: 40px; }
+  .blog-archive-year { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .blog-archive-year-header { display: flex; align-items: baseline; gap: 16px; }
+  .blog-archive-year-title { font-size: 38px; }
+  .blog-archive-count { margin: 0; }
+  .blog-archive-timeline { margin-left: 4px; padding-left: 24px; }
+  .blog-archive-entry::before { left: -28px; }
+  .blog-archive-entry h3 { font-size: 19px; line-height: 1.45; }
 }
 
 @media print {

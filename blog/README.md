@@ -2,7 +2,9 @@
 
 文章 Markdown 文件直接放在本目录。网站导航中的 **Blog** 指向 `/blog/`，列表自动按日期倒序排列，并按年份分组。文章页参考 Lil'Log 的单栏阅读排版，包含日期、阅读时间、可折叠目录、标题锚点、数学公式和代码高亮。
 
-Blog 页面及文章页导航中的 **Archive** 指向 `/archives/`，按年份、月份倒序归档，并显示每组的文章数量。归档与 Blog 列表使用相同的文章来源，新增或修改文章后自动更新；`published: false` 的草稿不会出现。归档模板位于 `_pages/blog-archive.html`，博客导航在 `_data/navigation.yml` 的 `blog` 部分配置。
+Blog 页面及文章页导航中的 **Archive** 指向 `/archives/`，使用按年份分组、日期倒序排列的时间轴，并显示每年的文章数量。归档与 Blog 列表使用相同的文章来源，新增或修改文章后自动更新；`published: false` 的草稿不会出现。归档模板位于 `_pages/blog-archive.html`，博客导航在 `_data/navigation.yml` 的 `blog` 部分配置。
+
+时间轴标题下的主题标签直接读取 Markdown 顶部的 `tags`，例如 `tags: [Stochastic Optimization, Proof Roadmap]`，多个标签用 `·` 分隔。Archive 也兼容单个标签写法 `tag: Optimization`；两者都有值时优先使用 `tags`。未填写或留空时不显示标签行，不会自动推断分类。
 
 ## 新建文章
 
