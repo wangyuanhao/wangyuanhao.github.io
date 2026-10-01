@@ -3,6 +3,7 @@ layout: blog-base
 title: "Archive"
 permalink: /archives/
 lang: en
+body_class: blog-archive-page
 sitemap: true
 ---
 <header class="blog-index-header">
@@ -30,7 +31,7 @@ sitemap: true
               <article>
                 <h4><a href="{{ article.url | relative_url }}">{{ article.title | escape }}</a></h4>
                 <div class="blog-meta">
-                  <span>Date: <time datetime="{{ article.date | date_to_xmlschema }}">{{ article.date | date: '%B %d, %Y' }}</time></span>
+                  <span>Date: <time datetime="{{ article.date | date_to_xmlschema }}">{{ article.date | date: '%B %-d, %Y' }}</time></span>
                   <span>Author: {{ article.byline | default: site.name | escape }}</span>
                 </div>
               </article>

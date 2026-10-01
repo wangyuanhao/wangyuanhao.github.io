@@ -16,7 +16,7 @@ layout: compress
       <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
     {% endif %}
   </head>
-  <body class="blog-page" id="blog-top">
+  <body class="blog-page{% if page.body_class %} {{ page.body_class | escape }}{% endif %}" id="blog-top">
     <a class="blog-skip-link" href="#blog-main">跳转到正文</a>
     {% include masthead.html navigation="blog" %}
     <main class="blog-shell" id="blog-main">
