@@ -5,6 +5,7 @@ permalink: /blog/Proof-Roadmap-ProxSVRG/
 excerpt: "Proof roadmap of theorectial analysis of Prox-SVRG, a stochastic first-order optimization method for solving composite objectives"
 tags: [Stochastic Optimization, Proof Roadmap]
 lang: en
+published: true
 ```
 
 
