@@ -99,10 +99,9 @@
 .blog-footer a { color: #777; }
 .blog-index-header { margin-bottom: 52px; }
 .blog-index-header p { color: #777; font-size: 16px; }
-.blog-year { margin: 38px 0 12px; color: #777; font-size: 18px; font-weight: 500; }
 .blog-entry { padding: 24px 0; border-bottom: 1px solid #ebebeb; }
-.blog-entry h3 { margin: 0 0 12px; font-size: 25px; line-height: 1.4; }
-.blog-entry h3 a { color: #303030; }
+.blog-entry h2 { margin: 0 0 12px; font-size: 25px; line-height: 1.4; }
+.blog-entry h2 a { color: #303030; }
 .blog-entry-excerpt { margin: 0 0 14px; color: #666; font-size: 16px; }
 .blog-empty { padding: 32px 0; color: #777; }
 
@@ -149,7 +148,7 @@
   .blog-content h1, .blog-content h2 { font-size: 25px; }
   .blog-content h3 { font-size: 21px; }
   .blog-content .blog-heading-anchor { opacity: 1; }
-  .blog-entry h3 { font-size: 22px; }
+  .blog-entry h2 { font-size: 22px; }
   .blog-archive-header h1 { font-size: 40px; }
   .blog-archive-year { grid-template-columns: minmax(0, 1fr); gap: 28px; }
   .blog-archive-year-header { display: flex; align-items: baseline; gap: 16px; }

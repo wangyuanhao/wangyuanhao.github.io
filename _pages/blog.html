@@ -11,15 +11,9 @@ sitemap: true
 </header>
 
 {% assign articles = site.pages | where: 'blog', true | where_exp: 'article', 'article.published != false' | sort: 'date' | reverse %}
-{% assign previous_year = '' %}
 {% for article in articles %}
-  {% assign year = article.date | date: '%Y' %}
-  {% if year != previous_year %}
-    <h2 class="blog-year">{{ year }}</h2>
-    {% assign previous_year = year %}
-  {% endif %}
   <article class="blog-entry">
-    <h3><a href="{{ article.url | relative_url }}">{{ article.title | escape }}</a></h3>
+    <h2><a href="{{ article.url | relative_url }}">{{ article.title | escape }}</a></h2>
     {% if article.excerpt %}<p class="blog-entry-excerpt">{{ article.excerpt | markdownify | strip_html }}</p>{% endif %}
     <div class="blog-meta">
       {% if article.date %}<time datetime="{{ article.date | date_to_xmlschema }}">{{ article.date | date: '%B %d, %Y' }}</time>{% endif %}
