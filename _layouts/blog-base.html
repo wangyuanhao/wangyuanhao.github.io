@@ -5,7 +5,7 @@ layout: compress
 <html lang="{{ page.lang | default: 'zh-CN' }}" class="no-js">
   <head>
     {% include head.html %}
-    <link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}?v={{ site.time | date: '%s' }}">
     {% if page.math %}
       <script>
         window.MathJax = {
