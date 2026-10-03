@@ -3,18 +3,22 @@ title: "An Introductory Random Matrix Theory Part I: Matrix Elementary Revisited
 date: 2026-10-03
 permalink: /blog/Random-Matrix-Theory-Part1/
 excerpt: "We revist elementary vector space and characterization of matrix"
-tags: [High Dimensional Probability; Random Matrix Theory]
+tags: [High Dimensional Probability, Random Matrix Theory]
 lang: en
 published: true
 ---
 
 # Vector Space
 
+<div markdown="1" style="background:#f0f4fa; border:2px solid #f0f4fa; border-radius:0; padding:20px 24px; color:#111; line-height:1.8;">
+
 **<u>(Linear Dependence Lemma)</u>**  Suppose $$v_{1}, v_{2}, \dots, v_{m}$$ is a linearly dependent list in $$V$$. Then there exists $$k \in \{1, 2, \dots, m\}$$ such that
 $$
 v_{k} \in \mathtt{span}\{v_{1}, v_{2}, \dots, v_{k-1}\}.
 $$
 Furthermore, if $$k$$ satisfies the condition above and the $$k^{\mathtt{th}}$$ term is removed from $$v_{1}, v_{2}, \dots, v_{m}$$, then the span of the remaining list equals to $$\mathtt{span}\{v_{1}, v_{2}, \dots, v_{m}\}$$.
+
+</div>
 
 ---
 
@@ -42,9 +46,11 @@ which implies $$v \in \mathtt{span}\{v_{1}, \dots, v_{k-1}, v_{k+1}, v_{m}\} \su
 
 ---
 
-
+<div markdown="1" style="background:#f0f4fa; border:2px solid #f0f4fa; border-radius:0; padding:20px 24px; color:#111; line-height:1.8;">
 
 **(<u>Every Spanning List Contains a Biasis</u>)**  Every spanning list in a vector space can be reduced to a basis of the vector space.
+
+</div>
 
 ---
 

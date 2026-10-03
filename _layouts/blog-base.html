@@ -9,7 +9,7 @@ layout: compress
     {% if page.math %}
       <script>
         window.MathJax = {
-          tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], processEscapes: true },
+          tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], processEscapes: true, tags: all },
           options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
         };
       </script>
