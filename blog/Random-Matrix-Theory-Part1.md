@@ -10,7 +10,7 @@ published: true
 
 # Vector Space
 
-<u>(**Linear Dependence Lemma**)</u> Suppose $$v_{1}, v_{2}, \dots, v_{m}$$ is a linearly dependent list in $$V$$. Then there exists $$k \in \{1, 2, \dots, m\}$$ such that
+**<u>(Linear Dependence Lemma)</u>**  Suppose $$v_{1}, v_{2}, \dots, v_{m}$$ is a linearly dependent list in $$V$$. Then there exists $$k \in \{1, 2, \dots, m\}$$ such that
 $$
 v_{k} \in \mathtt{span}\{v_{1}, v_{2}, \dots, v_{k-1}\}.
 $$
@@ -48,7 +48,7 @@ which implies $$v \in \mathtt{span}\{v_{1}, \dots, v_{k-1}, v_{k+1}, v_{m}\} \su
 
 ---
 
-<u>**Proof**</u> 
+**<u>Proof</u> **
 
 Let $V = \mathtt{span}\{v_{1}, v_{2}, \dots, v_{m}\}$ and $B:=\{v_{1}, v_{2}, \dots, v_{m}\}$. 
 
