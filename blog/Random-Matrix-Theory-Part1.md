@@ -10,8 +10,6 @@ published: true
 
 # Vector Space
 
-
-
 **(Linear Dependence Lemma)**  Suppose $$v_{1}, v_{2}, \dots, v_{m}$$ is a linearly dependent list in $$V$$. Then there exists $$k \in \{1, 2, \dots, m\}$$ such that
 $$
 v_{k} \in \mathtt{span}\{v_{1}, v_{2}, \dots, v_{k-1}\}.
