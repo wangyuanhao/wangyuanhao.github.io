@@ -15,9 +15,7 @@ published: true
 $$
 v_{k} \in \mathtt{span}\{v_{1}, v_{2}, \dots, v_{k-1}\}.
 $$
-Furthermore, if $$k$$ satisfies the condition above and the $$k^{\mathtt{th}}$$ term is removed from $$v_{1}, v_{2}, \dots, v_{m}$$, then the span of the remaining list equals to $$\mathtt{span}\{v_{1}, v_{2}, \dots, v_{m}\}$$.
-
-</div>
+Furthermore, if $$k$$ satisfies the condition above and the $$k^{\mathtt{th}}$$ term is removed from $$v_{1}, v_{2}, \dots, v_{m}$$, then the span of the remaining list equals to $$\mathtt{span}\{v_{1}, v_{2}, \dots, v_{m}\}$$.</div>
 
 ---
 
