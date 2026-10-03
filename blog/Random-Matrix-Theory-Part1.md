@@ -48,7 +48,7 @@ which implies $$v \in \mathtt{span}\{v_{1}, \dots, v_{k-1}, v_{k+1}, v_{m}\} \su
 
 ---
 
-**<u>Proof</u> **
+**<u>Proof</u>**
 
 Let $V = \mathtt{span}\{v_{1}, v_{2}, \dots, v_{m}\}$ and $B:=\{v_{1}, v_{2}, \dots, v_{m}\}$. 
 
