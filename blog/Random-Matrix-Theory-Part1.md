@@ -16,23 +16,6 @@ v_{k} \in \mathtt{span}\{v_{1}, v_{2}, \dots, v_{k-1}\}.
 $$
 Furthermore, if $$k$$ satisfies the condition above and the $$k^{\mathtt{th}}$$ term is removed from $$v_{1}, v_{2}, \dots, v_{m}$$, then the span of the remaining list equals to $$\mathtt{span}\{v_{1}, v_{2}, \dots, v_{m}\}$$.
 
-
-
-<div markdown="1" style="background:#e2e9f4; border:2px solid #555; border-radius:16px; padding:20px 24px; color:#111; line-height:1.8;">
-
-**Linear Dependence Lemma**
-
-
-Suppose $$v_1, v_2, \dots, v_m$$ is a linearly dependent list in $$V$$. Then there exists $$k \in \{1, 2, \dots, m\}$$ such that
-
-$$
-v_k \in \operatorname{span}\{v_1, v_2, \dots, v_{k-1}\}.
-$$
-
-Furthermore, if $$k$$ satisfies the condition above and the $$k^{\mathrm{th}}$$ term is removed from $$v_1, v_2, \dots, v_m$$, then the span of the remaining list equals $$\operatorname{span}\{v_1, v_2, \dots, v_m\}$$.
-
-</div>
-
 ---
 
 **<u>Proof</u>** 
@@ -59,11 +42,9 @@ which implies $$v \in \mathtt{span}\{v_{1}, \dots, v_{k-1}, v_{k+1}, v_{m}\} \su
 
 ---
 
-<div markdown="1" style="background:#e2e9f4; border:2px solid #555; border-radius:16px; padding:20px 24px; color:#111; line-height:1.8;">
+
 
 **(<u>Every Spanning List Contains a Biasis</u>)**  Every spanning list in a vector space can be reduced to a basis of the vector space.
-
-</div>
 
 ---
 
