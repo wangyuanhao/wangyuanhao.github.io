@@ -5,7 +5,7 @@ permalink: /blog/Random-Matrix-Theory-Part1/
 excerpt: "We revist elementary vector space and characterization of matrix"
 tags: [High Dimensional Probability, Random Matrix Theory]
 lang: en
-published: true
+published: false
 ---
 
 # Vector Space
