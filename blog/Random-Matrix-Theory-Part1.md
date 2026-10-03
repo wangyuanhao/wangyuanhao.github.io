@@ -1,5 +1,4 @@
-
-```
+---
 title: "An Introductory Random Matrix Theory Part I: Matrix Elementary Revisited"
 date: 2026-10-03
 permalink: /blog/Random-Matrix-Theory-Part1/
@@ -7,7 +6,7 @@ excerpt: "We revist elementary vector space and characterization of matrix"
 tags: [High Dimensional Probability; Random Matrix Theory]
 lang: en
 published: true
-```
+---
 
 # Vector Space
 
