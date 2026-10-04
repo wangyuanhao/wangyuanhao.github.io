@@ -163,3 +163,28 @@
   .blog-page .masthead, .blog-toc, .blog-footer, .blog-post-footer, .blog-breadcrumb, .blog-heading-anchor { display: none; }
   .blog-shell { width: 100%; max-width: none; margin: 0; }
 }
+
+/* 正文与首页摘要 */
+.blog-page {
+  font-family: Georgia, "Noto Serif SC", "Source Han Serif SC",
+               "Songti SC", serif;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+/* 标题与界面文字 */
+.blog-page h1,
+.blog-page h2,
+.blog-page h3,
+.blog-page h4,
+.blog-page h5,
+.blog-page h6,
+.blog-page .masthead,
+.blog-meta,
+.blog-breadcrumb,
+.blog-toc,
+.blog-tags,
+.blog-footer {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               "PingFang SC", "Microsoft YaHei", sans-serif;
+}
