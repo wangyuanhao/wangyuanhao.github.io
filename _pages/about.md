@@ -36,6 +36,30 @@ redirect_from:
 * <span style="font-family: 'Times', sans-serif;">*Calculus I* for undergraduates (Autumn 2022, Autumn 2023, [Autumn 2024](https://wangyuanhao.github.io/calculus_course_webpage/))</span>
 * <span style="font-family: 'Times', sans-serif;">*Probability and Mathematical Statistics* for undergraduates (Spring 2023)</span>
 
+# <span style="font-family: 'Times', sans-serif;">Recommended Books</span>
+
+##### <span style="font-family: 'Times', sans-serif;">Fundamentals</span>
+
+* <span style="font-family: 'Times', sans-serif;">Golub G.H. & Van Loan C. F. Matrix Compuations,  4th Edition.The Johns Hopkins University Press: Chapter 1 & Chapter 2; Chapter 7 & Chapter 8 (Optional) </span>
+* <span style="font-family: 'Times', sans-serif;">Wasserman, L. All of Statistics: A Concise Course in Statistical Inference. Springer Science & Business Media. </span>
+* <span style="font-family: 'Times', sans-serif;">Bishop, C. M. Pattern Recognition and Machine Learning. Springer: Chapter 1-4 & Chapter 9, 10, 12, 13, 14. </span>
+* <span style="font-family: 'Times', sans-serif;">刘浩洋、户将、李勇锋、文再文编著. 最优化计算方法.  高等教育出版社.</span>
+
+##### <span style="font-family: 'Times', sans-serif;">Advanced Level</span> 
+
+* <span style="font-family: 'Times', sans-serif;">Nesterov, Y. Lectures on Convex Optimization, 2nd Edition. Springer: Chapter 1-4. </span>
+* <span style="font-family: 'Times', sans-serif;">Beck, A. First-Order Methods in Optimization. SIAM. </span>
+* <span style="font-family: 'Times', sans-serif;">Vershynin, R. High-Dimensional Probability: An Introduction with Applications in Data Science, 2nd Edition. Cambridge University Press. </span>
+* <span style="font-family: 'Times', sans-serif;">Mohri, M., Rostamizadeh, A., & Talwalkar, A. Foundations of Machine Learning, 2nd Edition. MIT Press. </span>
+
+##### <span style="font-family: 'Times', sans-serif;">Useless Now but Interesting</span> 
+
+* <span style="font-family: 'Times', sans-serif;">Tao, T. Topics in Random Matrix Theory. American Mathematical Society. </span>
+* <span style="font-family: 'Times', sans-serif;">Alon, N. & Spencer, J. H. The Probabilistic Method, 4th Edition. Wiley. </span>
+* <span style="font-family: 'Times', sans-serif;">Foucart, S. & Rauhut, R. A Mathematical Introduction to Compressive Sensing. Springer. </span>
+
+<span style="font-family: 'Times', sans-serif;">In an age of increasingly powerful LLMs, when knowledge is readily accessible, I sometimes wonder whether people still read books. Yet I keep this list as a reminder to myself that the intellectual achievements of those who came before us are still worthy of admiration and appreciation. </span>
+
 # <span style="font-family: 'Times', sans-serif;">Advice for Students</span>
 
 * <span style="font-family: 'Times', sans-serif;">[Advice from Ravi Vakil](https://math.stanford.edu/~vakil/potentialstudents.html)</span>
