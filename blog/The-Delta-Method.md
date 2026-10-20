@@ -20,21 +20,21 @@ Before we dive into the delta method, we first introduce the convergence of rand
 
 # Convergence of random variables  
 
-Let $\{X_{n}\}$ be a sequence of random variables and $X$ be a random variable.
+Let $$\{X_{n}\}$$ be a sequence of random variables and $$X$$ be a random variable.
 
-Defintion 1 (Convergence in probability) $X_{n}$ converges to a random variable *in probability*  or $$X_{n} \overset{p}{\rightarrow}X$$, if 
+Defintion 1 (Convergence in probability) $$X_{n}$$ converges to a random variable *in probability*  or $$X_{n} \overset{p}{\rightarrow}X$$, if 
 
 $$
 \lim\limits_{n \rightarrow \infty} P(|X_{n} -X|>\epsilon) = 0, \forall \epsilon>0.
 $$
 
-Definition 2 (Convergence in distribution) Denote $$F_{n}(t) = \mathbb{P}(X_{n}<t)$$ and $$F(t) = \mathbb{P}(X<t)$$. $X_{n}$ converges to a random variable $$X$$ *in distribution* or $$X_{n} \overset{d}{\rightarrow} X$$, if
+Definition 2 (Convergence in distribution) Denote $$F_{n}(t) = \mathbb{P}(X_{n}<t)$$ and $$F(t) = \mathbb{P}(X<t)$$. $$X_{n}$$ converges to a random variable $$X$$ *in distribution* or $$X_{n} \overset{d}{\rightarrow} X$$, if
 
 $$
 \lim\limits_{n \rightarrow \infty} F_{n}(t) = F(t),
 $$
 
-for every continuous point $t$ of $$F(t)$$.
+for every continuous point $$t$$ of $$F(t)$$.
 
 Defintion 3 (Convergence in $$L_{2}$$) $$X_{n}$$ converges to $$X$$ in $$L_{2}$$ or $$X_{n} \overset{L_{2}}{\rightarrow} X$$, if 
 
@@ -77,7 +77,7 @@ $$
 P\left(\cap_{\epsilon >0} \cup_{n \in \mathbb{N}_{+}}A_{n, \epsilon}\right)=1.
 $$
 
-Note that the monotone descreasing of $\cup_{n \in \mathbb{N}_{+}}A_{n, \epsilon}$ w.r.t $$\epsilon$$,
+Note that the monotone descreasing of $$\cup_{n \in \mathbb{N}_{+}}A_{n, \epsilon}$$ w.r.t $$\epsilon$$,
 
 $$
 \cap_{\epsilon >0} \cup_{n \in \mathbb{N}_{+}}A_{n, \epsilon} = \lim\limits_{\epsilon \downarrow 0} \cup_{n \in \mathbb{N}_{+}} A_{n, \epsilon}.
@@ -97,7 +97,7 @@ $$
 
 Since $$A_{1, \epsilon} \subset A_{2,\epsilon} \subset \cdots \subset A_{n, \epsilon} \subset \cdots$$, we have $$\cup_{n \in \mathbb{N}_{+}} A_{n, \epsilon}= \lim\limits_{n \rightarrow \infty} A_{n, \epsilon}$$.
 
-Therefore, we conclude that, for every $\epsilon > 0$, 
+Therefore, we conclude that, for every $$\epsilon > 0$$, 
 
 $$
 P(A_{n, \epsilon})=1 \quad \text{as} \quad n \rightarrow \infty.
@@ -117,7 +117,7 @@ $$
 \lim\limits_{n \rightarrow \infty} P(|X_{k} - X|<\epsilon~\text{for all}~k > n) = 1, \quad \forall \epsilon>0.
 $$
 
-As $$k > n$$ and $n \rightarrow \infty$, we have $$k \rightarrow \infty$$ and hence
+As $$k > n$$ and $$n \rightarrow \infty$$, we have $$k \rightarrow \infty$$ and hence
 
 $$
 \lim\limits_{k \rightarrow \infty} P(|X_{k}- X|<\epsilon)=1, \quad \forall \epsilon>0.
@@ -139,7 +139,7 @@ $$
 
 That is $$X_{n} \overset{p}{\rightarrow} X$$.
 
-3. Let $$\epsilon>0$$. If $$X_{n}\leq t_{0}$$, then either  $$X \leq t_{0} +\epsilon$$ or $X>t_{0}+\epsilon$, where in the latter case we have $$|X_{n} - X| >\epsilon$$. Hence we have $$\{X_{n} \leq t_{0}\} \subset \{X \leq t_{0}+\epsilon\} \cup \{|X_{n} - X|>\epsilon\}$$ and 
+3. Let $$\epsilon>0$$. If $$X_{n}\leq t_{0}$$, then either  $$X \leq t_{0} +\epsilon$$ or $$X>t_{0}+\epsilon$$, where in the latter case we have $$|X_{n} - X| >\epsilon$$. Hence we have $$\{X_{n} \leq t_{0}\} \subset \{X \leq t_{0}+\epsilon\} \cup \{|X_{n} - X|>\epsilon\}$$ and 
 
 $$
 F_{n}(t_{0}) \leq F(t_{0}+\epsilon) + P(|X_{n} - X|>\epsilon)
@@ -161,7 +161,7 @@ $$
 F(t_{0} - \epsilon) \leq \mathop{\lim\inf}\limits_{n \rightarrow \infty} F_{n}(t_{0}) \leq \mathop{\lim\sup}\limits_{n \rightarrow \infty} F_{n}(t_{0}) \leq F(t_{0}+\epsilon), \quad \forall \epsilon > 0.
 $$
 
-Taking $$\epsilon \downarrow 0$$ and using the continuity of $$t_{0}$$ in $F(t)$, we have
+Taking $$\epsilon \downarrow 0$$ and using the continuity of $$t_{0}$$ in $$F(t)$$, we have
 
 $$
 \lim\limits_{n \rightarrow \infty} F_{n}(t_{0}) = F(t_{0}).
@@ -297,7 +297,7 @@ $$
 \lim\limits_{n \rightarrow \infty} A_{n} = \mathop{\cap}\limits_{n \in \mathbb{N}_{+}}A_{n}
 $$
 
-Theorem B (Continuity of probability) If $\lim\limits_{n \rightarrow \infty} A_{n} = A$, then
+Theorem B (Continuity of probability) If $$\lim\limits_{n \rightarrow \infty} A_{n} = A$$, then
 
 $$
 P(\lim\limits_{n \rightarrow \infty}A_{n}) = P(A).
