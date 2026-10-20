@@ -314,7 +314,9 @@ $$
 \sup\limits_{\alpha \in A} P(|X_{\alpha}|>M)<\epsilon.
 $$
 
-Definition E ($$O_{p}$$ notation) If $$\{X_{n}: n\in\mathbb{N}_{+}\}$$ is bounded in probability, then $$X_{n} = O_{p}(1)$$.
+> Proposition E. Any real random variable is tight.
+
+Definition F ($$O_{p}$$ notation) If $$\{X_{n}: n\in\mathbb{N}_{+}\}$$ is bounded in probability, then $$X_{n} = O_{p}(1)$$.
 
 Generally, for a give sequence of random variables $$R_{n}$$,
 
@@ -340,13 +342,13 @@ o_{p}(O_{p}(1))     &= o_{p}(1)
 \end{aligned}
 $$
 
-> Lemma F.  Let $$R$$ be a function defined on domain in $$\mathbb{R}$$ such that $$R(0)=0$$. Let $$X_{n}$$ be a sequence of random variables with values in the domain of $$R$$ that converges in probability to zero. Then, for every $$p>0$$,
+> Lemma G.  Let $$R$$ be a function defined on domain in $$\mathbb{R}$$ such that $$R(0)=0$$. Let $$X_{n}$$ be a sequence of random variables with values in the domain of $$R$$ that converges in probability to zero. Then, for every $$p>0$$,
 >
 > (i) if $$R(h)=o(\lvert h\rvert ^{p})$$ as $$ h \rightarrow 0$$, then $$R(X_{n}) = o_{p}(\lvert X_{n}\rvert ^{p})$$;
 >
 > (ii) if $$R(h)= O(\lvert h\rvert ^{p})$$ as $$h \rightarrow 0$$, then $$R(X_{n}) = O_{p}(\lvert X_{n}\rvert ^{p})$$.
 
-**Proof of Lemma F** 
+**Proof of Lemma G** 
 
 Define $$g(h) = \frac{R(h)}{\lvert h\rvert ^{p}}$$ for $$h\neq 0$$, and $$g(0) = 0$$.  By assumtion, $$g(h)$$ is continuous at $$0$$.
 
