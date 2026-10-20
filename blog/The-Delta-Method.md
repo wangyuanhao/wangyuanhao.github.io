@@ -112,6 +112,7 @@ $$
 **Proof of Theorem 1**
 
 (1) Using Lemma 1, $$X_{n} \overset{a.s.}{\rightarrow} X$$ is equivalent to
+
 $$
 \lim\limits_{n \rightarrow \infty} P(|X_{k} - X|<\epsilon~\text{for all}~k > n) = 1, \quad \forall \epsilon>0.
 $$
@@ -125,6 +126,7 @@ $$
 That is $$X_{n} \overset{p}{\rightarrow} X$$.
 
 (2) Using Chebyshev's inequality, we have
+
 $$
 P(|X_{n} - X|>\epsilon) = P(|X_{n}-X|^{2}>\epsilon^{2}) \leq \frac{E(X_{n}-X)^{2}}{\epsilon^{2}}, \quad \forall \epsilon>0.
 $$
@@ -138,6 +140,7 @@ $$
 That is $$X_{n} \overset{p}{\rightarrow} X$$.
 
 (3) Let $$\epsilon>0$$. If $$X_{n}\leq t_{0}$$, then either  $$X \leq t_{0} +\epsilon$$ or $$X>t_{0}+\epsilon$$, where in the latter case we have $$|X_{n} - X| >\epsilon$$. Hence we have $$\{X_{n} \leq t_{0}\} \subset \{X \leq t_{0}+\epsilon\} \cup \{|X_{n} - X|>\epsilon\}$$ and 
+
 $$
 F_{n}(t_{0}) \leq F(t_{0}+\epsilon) + P(|X_{n} - X|>\epsilon)
 $$
