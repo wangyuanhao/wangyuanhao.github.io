@@ -51,7 +51,7 @@ $$
 > Lemma 1. $$X_{n} \overset{a.s.}{\rightarrow} X$$ if and only if for every $$\epsilon >0$$,
 > 
 > $$
-> \lim\limits_{n \rightarrow \infty}P\{|X_{k} - X| < \epsilon, \text{for~all}~ k \geq n\} = 1.
+> \lim\limits_{n \rightarrow \infty}P\{|X_{k} - X| < \epsilon, \text{for all}~ k \geq n\} = 1.
 > $$
 
 **Proof of Lemma 1**
@@ -308,7 +308,7 @@ $$
 
 Definition C ($$o_{p}$$ notation) If $$X_{n} \overset{d}{\rightarrow} 0$$, then $$X_{n}=o_{p}(1)$$.
 
-Definition D (Tighness) Any random variable $$X$$ is tight, if for every $$\epsilon>0$$, there exists a constant $$M$$ such that $$P(\lvert X\rvert >M)<\epsilon$$. A set of random variables $$\{X_{\alpha}: \alpha \in A\}$$ is called <mark>*uniformly tight (or bounded in probability)*</mark>,  if for every $$\epsilon>0$$, there exists a constant $$M$$ such that
+Definition D (Tighness) Any random variable $$X$$ is tight, if for every $$\epsilon>0$$, there exists a constant $$M$$ such that $$P(\lvert X\rvert >M)<\epsilon$$. A set of random variables $$\{X_{\alpha}: \alpha \in A\}$$ is called *<mark>uniformly tight (or bounded in probability)</mark>*,  if for every $$\epsilon>0$$, there exists a constant $$M$$ such that
 
 $$
 \sup\limits_{\alpha \in A} P(|X_{\alpha}|>M)<\epsilon.
