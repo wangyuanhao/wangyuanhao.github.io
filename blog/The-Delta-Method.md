@@ -246,8 +246,8 @@ $$
 \phi(t) & = \phi(\theta) + \nabla \phi(\theta)^{T}(t-\theta) + \frac{1}{2}(t - \theta)^{T}\nabla^{2}\phi(t-\theta) + o(\|t - \theta\|^{2}) \\
 & = \phi(\theta) + \frac{1}{2}(t - \theta)^{T}\nabla^{2}\phi(\theta)(t-\theta) + o(\|t - \theta\|^{2})
 \end{aligned}
-
 $$
+
 As $$r_{n}(T_{n} - \theta) \overset{d}{\rightarrow} T$$,  $$r_{n}(T_{n} - \theta)$$ is uniformly tight and $$T_{n} - \theta$$ converges to zero in probability. Hence by Lemma F, we have
 
 $$
@@ -307,7 +307,7 @@ $$
 
 Definition C ($$o_{p}$$ notation) If $$X_{n} \overset{d}{\rightarrow} 0$$, then $$X_{n}=o_{p}(1)$$.
 
-Definition D (Tighness) Any random variable $$X$$ is *tight*, if for every $$\epsilon>0$$, there exists a constant $$M$$ such that $$P(|X|>M)<\epsilon$$. A set of random variables $$\{X_{\alpha}: \alpha \in A\}$$ is called *uniformly tight (or ==bounded in probability==)*,  if for every $$\epsilon>0$$, there exists a constant $$M$$ such that 
+Definition D (Tighness) Any random variable $$X$$ is *tight*, if for every $$\epsilon>0$$, there exists a constant $$M$$ such that $$P(|X|>M)<\epsilon$$. A set of random variables $$\{X_{\alpha}: \alpha \in A\}$$ is called *uniformly tight (or bounded in probability)*,  if for every $$\epsilon>0$$, there exists a constant $$M$$ such that 
 
 $$
 \sup\limits_{\alpha \in A} P(|X_{\alpha}|>M)<\epsilon.
