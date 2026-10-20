@@ -59,7 +59,7 @@ $$
 Let 
 
 $$
-A_{n, \epsilon} = \{|X_{k} - X |<\epsilon ~\text{for~all}~k\geq n\}.
+A_{n, \epsilon} = \{|X_{k} - X |<\epsilon ~\text{for all}~k\geq n\}.
 $$
 
 Then 
@@ -308,7 +308,7 @@ $$
 
 Definition C ($$o_{p}$$ notation) If $$X_{n} \overset{d}{\rightarrow} 0$$, then $$X_{n}=o_{p}(1)$$.
 
-Definition D (Tighness) Any random variable $$X$$ is tight, if for every $$\epsilon>0$$, there exists a constant $$M$$ such that $$P(\lvert X\rvert >M)<\epsilon$$. A set of random variables $$\{X_{\alpha}: \alpha \in A\}$$ is called ==*uniformly tight (or bounded in probability)*==,  if for every $$\epsilon>0$$, there exists a constant $$M$$ such that
+Definition D (Tighness) Any random variable $$X$$ is tight, if for every $$\epsilon>0$$, there exists a constant $$M$$ such that $$P(\lvert X\rvert >M)<\epsilon$$. A set of random variables $$\{X_{\alpha}: \alpha \in A\}$$ is called <mark>*uniformly tight (or bounded in probability)*</mark>,  if for every $$\epsilon>0$$, there exists a constant $$M$$ such that
 
 $$
 \sup\limits_{\alpha \in A} P(|X_{\alpha}|>M)<\epsilon.
