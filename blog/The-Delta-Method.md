@@ -210,7 +210,7 @@ $$
 
 Let $$h = t - \theta$$. we have $$\lim\limits_{h \rightarrow 0} \frac{o(\|h\|)}{h} = 0$$.
 
-Since $$r_{n}(T_{n} - \theta) \overset{d}{\rightarrow} T$$, $$r_{n}\|T_{n}-\theta\| = O_{p}(1)$$ and $$T_{n} - \theta = o_{p}(1)$$. By Lemma F, we have
+Since $$r_{n}(T_{n} - \theta) \overset{d}{\rightarrow} T$$, $$r_{n}\|T_{n}-\theta\| = O_{p}(1)$$ and $$T_{n} - \theta = o_{p}(1)$$. By Lemma G, we have
 
 $$
 \phi(T_{n}) = \phi(\theta) + \phi'(\theta)(T_{n} - \theta) + o_{p}(\|T_{n}- \theta\|)
@@ -249,7 +249,7 @@ $$
 \end{aligned}
 $$
 
-As $$r_{n}(T_{n} - \theta) \overset{d}{\rightarrow} T$$,  $$r_{n}(T_{n} - \theta)$$ is uniformly tight and $$T_{n} - \theta$$ converges to zero in probability. Hence by Lemma F, we have
+As $$r_{n}(T_{n} - \theta) \overset{d}{\rightarrow} T$$,  $$r_{n}(T_{n} - \theta)$$ is uniformly tight and $$T_{n} - \theta$$ converges to zero in probability. Hence by Lemma G, we have
 
 $$
 \phi(T_{n}) - \phi(\theta) - \frac{1}{2}(T_{n}- \theta)^{T}\nabla^{2}\phi(\theta)(T_{n} - \theta) = o_{p}(\|T_{n} - \theta\|^{2})
@@ -321,7 +321,7 @@ Definition F ($$O_{p}$$ notation) If $$\{X_{n}: n\in\mathbb{N}_{+}\}$$ is bounde
 Generally, for a give sequence of random variables $$R_{n}$$,
 
 $$
-X_{n} = o_{1}(R_{n}) \Longrightarrow X_{n} = Y_{n}R_{n} \quad \text{and} \quad Y_{n}=o_{p}(1)
+X_{n} = o_{p}(R_{n}) \Longrightarrow X_{n} = Y_{n}R_{n} \quad \text{and} \quad Y_{n}=o_{p}(1)
 $$
 
 $$
