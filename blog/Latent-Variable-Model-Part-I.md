@@ -29,7 +29,7 @@ $$
 
 causes difficulties in computing the expectation $$\mathbb{E}_{p(z)}\left[p(x\vert z)\right]$$, we can instead maximize the surrogate of the likelihood by variational inference.
 
-Speficially, let $$q(z)$$ be a surrogate distribution of $$p(z)$$ (Note that $$q(z)$$ can be <mark>**ANY FORM**</mark> of distribution of $$z$$),  we can write 
+Speficially, let $$q(z)$$ be a surrogate distribution of $$p(z)$$ (Note that $$q(z)$$ can be **<mark>ANY FORM</mark>** of distribution of $$z$$),  we can write 
 
 $$
 \begin{aligned}
@@ -711,7 +711,7 @@ The invere dispersion parameter $$\theta \in \mathbb{R}^{d}_{+}$$  that governs 
 
 #### Inference Models
 
-The posterior of the latent variables $$p(z, \ell|x)$$ is approximated by 
+The posterior of the latent variables $$p(z, \ell \vert x)$$ is approximated by 
 
 $$
 q(z, \ell \vert x) = q_{\kappa}(z\vert x)q_{\xi}(\ell\vert x),
@@ -734,7 +734,7 @@ z & = \mu_{\kappa}(x) + \sigma_{\kappa}(x) \odot \epsilon_{z}, \quad &\epsilon_{
 \end{aligned}
 $$
 
-The moments $$\mu_{\cdot}(x)$$ and $$\sigma_{\cdot}^{2}(x)$$ are characterized by <mark>neural networks (***Encoder***)</mark> parameterized by $$\kappa$$ and $$\xi$$ for $$z$$ and $$\ell$$, respectively.
+The moments $$\mu_{\cdot}(x)$$ and $$\sigma_{\cdot}^{2}(x)$$ are characterized by <mark>neural networks</mark> (**<mark>Encoder</mark>**) parameterized by $$\kappa$$ and $$\xi$$ for $$z$$ and $$\ell$$, respectively.
 
 #### Evidence Lower Bound (ELBO)
 
