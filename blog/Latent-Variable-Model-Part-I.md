@@ -490,7 +490,7 @@ $$
 \tag{Log-Likelihood}
 $$
 
-In $$\eqref{log-likelihood}$$ , $$q(z_{n}|x_{n}, \eta_{n})$$ can be any form for any data point $$x_{n}$$. However, in vae, it is fixed as $$\mathcal{N}(\mu_{\phi}(x_{n}), \sigma^{2}_{\phi}(x_{n}))$$, which induces gap between the best possible $$q(z_{n}\vert x_{n},\eta_{n})$$ that achives 
+In $$\eqref{log-likelihood}$$ , $$q(z_{n} \vert x_{n}, \eta_{n})$$ can be any form for any data point $$x_{n}$$. However, in vae, it is fixed as $$\mathcal{N}(\mu_{\phi}(x_{n}), \sigma^{2}_{\phi}(x_{n}))$$, which induces gap between the best possible $$q(z_{n}\vert x_{n},\eta_{n})$$ that achives 
 
 $$
 \min \mathtt{KL}(q(z_{n}\vert x_{n}, \eta_{n})\vert\vert p(z_{n}\vert x_{n}, \theta)).
