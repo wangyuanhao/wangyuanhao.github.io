@@ -485,7 +485,7 @@ $$
 The relationship between the log-likelihood of $$x_{n}$$ and its ELBO is expressed as
 
 $$
-\log p(x_{n}|\theta) = L_{n}(\eta_{n}, \theta) + \mathtt{KL}(q(z_{n}\vert x_{n}, \eta_{n})\vert\vert p(z_{n}\vert x_{n}, \theta)).
+\log p(x_{n} \vert \theta) = L_{n}(\eta_{n}, \theta) + \mathtt{KL}(q(z_{n}\vert x_{n}, \eta_{n})\vert\vert p(z_{n}\vert x_{n}, \theta)).
 \label{log-likelihood}
 \tag{Log-Likelihood}
 $$
