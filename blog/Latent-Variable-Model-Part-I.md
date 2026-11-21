@@ -209,6 +209,7 @@ we have
 $$
 \sigma_{t+1}^{2} = \frac{1}{d}\left\{\|x - \mu_{t+1}\|^{2} -2h_{t}^{T}W_{t+1}^{T}(x-\mu_{t+1}) + \mathtt{Tr}\left(W_{t+1}^{T}W_{t+1}C_{t}\right)\right\}
 $$
+
 In summary, the EM algorithm for solving PPCA estimation follows steps:
 
 * Let 
@@ -302,7 +303,6 @@ W_{t+1}   & =  \left(\sum\limits_{i=1}^{N}\left(x_{i} - \bar{x}\right)(h_{t}^{(i
 $$
 
 #### Implemetation Demo of PPCA
-
 ```python
 import torch
 
@@ -502,9 +502,9 @@ $$
 \mathtt{KL}(q^{*}\vert\vert p(z_{n}\vert x_{n}, \theta)) - \mathtt{KL}(\mathcal{N}(\mu_{\phi}(x_{n}), \sigma^{2}_{\phi}(x_{n})) \vert\vert p(z_{n}\vert x_{n}, \theta))
 $$
 
-is call the <mark>**amortization gap**</mark>.
+is call the **<mark>amortization gap</mark>**.
 
-For similicity, we deonte $$q(z_{n}|x_{n}, \eta_{n}):=\mathcal{N}(\mu_{\phi}(x_{n}), \sigma^{2}_{\phi}(x_{n}))$$ as $$q_{\phi}$$. The inference gap of VAE can be decomposed as 
+For similicity, we deonte $$q(z_{n} \vert x_{n}, \eta_{n}):=\mathcal{N}(\mu_{\phi}(x_{n}), \sigma^{2}_{\phi}(x_{n}))$$ as $$q_{\phi}$$. The inference gap of VAE can be decomposed as 
 
 $$
 \begin{aligned}
@@ -701,7 +701,7 @@ x \quad & = (1 - h) \odot y.
 \end{aligned}
 $$
 
-$$f_{\phi}$$ and $$f_{\psi}$$ are <mark>neural networks (***Decoders***)</mark>  that map the latent representation $$z$$ to $$\mathbb{R}^{d}$$. By the previous result the Gamma-Poisson subprocess is equivalent to
+$$f_{\phi}$$ and $$f_{\psi}$$ are <mark>neural networks</mark> (**<mark>Decoders</mark>**)  that map the latent representation $$z$$ to $$\mathbb{R}^{d}$$. By the previous result the Gamma-Poisson subprocess is equivalent to
 
 $$
 y \sim \mathtt{NB}(\ell \rho, \theta).
@@ -714,7 +714,7 @@ The invere dispersion parameter $$\theta \in \mathbb{R}^{d}_{+}$$  that governs 
 The posterior of the latent variables $$p(z, \ell|x)$$ is approximated by 
 
 $$
-q(z, \ell \vert x) = q_{\kappa}(z|x)q_{\xi}(\ell|x),
+q(z, \ell \vert x) = q_{\kappa}(z\vert x)q_{\xi}(\ell\vert x),
 $$
 
 $$
@@ -765,7 +765,6 @@ $$
 
 We have
 
-
 $$
 \begin{aligned}
 p(x_{g}\vert z, \ell) = & \sum\limits_{y_{g} \in \mathbb{N}} p(x_{g}\vert h_{g}=0, y_{g})p(h_{g}=0 \vert z)p(y_{g}\vert z, \ell; \theta)  \\
@@ -794,7 +793,9 @@ Hence
 $$
 p(x\vert z, \ell) = \prod_{g=1}^{d}p(x_{g}\vert z, \ell;\theta)
 $$
+
 Note that
+
 $$
 \log p(x_{g}\vert z, \ell; \theta) =\left\{\begin{aligned}
 &\log (1 - \pi_{g}(z)) + \log \mathtt{NB}(x_{g}; \ell\rho_{g}(z), \theta_{g}), \quad & x_{g} >0 \\
