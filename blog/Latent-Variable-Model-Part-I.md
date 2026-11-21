@@ -1,6 +1,6 @@
 ---
-title: "Generative Models- Part I: Probabilistic PCA and VAE"
-date: 2026-10-01
+title: "Generative Models-Part I: Probabilistic PCA and VAE"
+date: 2026-11-21
 permalink: /blog/Latent-Variable-Model-Part-I/
 excerpt: "This blog presents descriptions and minimal implementation demos for probabilistic principal analysis and variational autoencoders."
 tags: [Machine Learning]
