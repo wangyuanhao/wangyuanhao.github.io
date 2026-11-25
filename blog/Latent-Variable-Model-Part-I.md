@@ -971,7 +971,7 @@ $$
 
 In such case, the posterior collapse happens: for every $$x$$, it yields the same estimated apporxiamte posterior.
 
-<img src="./img/posterior_collapse.png" alt="posterior_collapse" style="zoom:50%;" />
+<img src="../img/posterior_collapse.png" alt="posterior_collapse" style="zoom:50%;" />
 
 #### Understanding Posterior Collapse by Mutual Information
 
