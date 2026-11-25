@@ -973,6 +973,8 @@ In such case, the posterior collapse happens: for every $$x$$, it yields the sam
 
 <img src="../img/posterior_collapse.png" alt="posterior_collapse" style="zoom:50%;" />
 
+It is shown that linear VAE may also has posterior collapse, so it is not merely caused by the powerful decoders (Lucas et al., 2019 & Bai et al., 2020).
+
 #### Understanding Posterior Collapse by Mutual Information
 
 Let $$X$$ and $$Z$$ be random variables with respective distrbutions $$p(x)$$ and $$p(z)$$, the mutual information between $$X$$ and $$Z$$ is defined as
@@ -1060,3 +1062,5 @@ There are several solutions  to address the posterior collapse, including
 3. Kingma, D. P. (2013). Auto-encoding variational bayes. *arXiv preprint arXiv:1312.6114*.
 4. Lopez, R., Regier, J., Cole, M. B., Jordan, M. I., & Yosef, N. (2018). Deep generative modeling for single-cell transcriptomics. *Nature methods*, *15*(12), 1053-1058.
 5. Murphy, K. P. (2023). *Probabilistic machine learning: Advanced topics*. MIT press.
+6. Lucas, J., Tucker, G., Grosse, R. B., & Norouzi, M. (2019). Don't blame the elbo! a linear vae perspective on posterior collapse. *Advances in neural information processing systems*, *32*.
+7. Dai, B., Wang, Z., & Wipf, D. (2020, November). The usual suspects? Reassessing blame for VAE posterior collapse. In *International conference on machine learning* (pp. 2313-2322). PMLR.
