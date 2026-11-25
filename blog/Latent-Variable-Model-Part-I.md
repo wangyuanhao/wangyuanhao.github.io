@@ -940,9 +940,123 @@ def elbo(x, z_encoder, library_encoder, decoder, prior_mean, prior_var):
     return recon - kl_z - kl_library, recon, kl_z, kl_library
 ```
 Refer to [`minimal_scvi_demo.py`](../files/minimal_scvi_demo.py) for the full implementation. 
+
+## Posterior Collapse (Murphy, Chapter 21.4)
+
+For variational autoencoder (VAE), the ELBO can be written as
+
+$$
+\mathcal{L}(\phi, \theta) = \mathbb{E}_{q_{\phi}(z\vert x)}[\log p_{\theta}(x \vert z)] - D_{\mathtt{KL}}(q_{\phi}(z\vert x)\vert\vert p(z)),
+$$
+
+where $$\theta$$ and $$\phi$$ are parameters for the decoder and the encoder respectively. 
+
+If the decoder is higly expressive, i.e., there exists $$\theta^{*}$$ such that
+
+$$
+p_{\theta^{*}}(x \vert z) = p_{\mathcal{D}}(x),
+$$
+
+where $$p_{\mathcal{D}}(x)$$ is the empirical distribution of $$x$$. For the Bayes' rule, we get
+
+$$
+p_{\mathcal{D},\theta^{*}}(z \vert x) = \frac{p_{\theta^{*}}(x \vert z)p(z)}{p_{\mathcal{D}}(x)} = p(z),
+$$
+
+which implies that the latent variable $$z$$ is independent of $$x$$  and there exists $$\phi^{*}$$ such that
+
+$$
+q_{\phi^{*}}(z \vert x) = p(z).
+$$
+
+In such case, the posterior collapse happens: for every $$x$$, it yields the same estimated apporxiamte posterior.
+
+<img src="./img/posterior_collapse.png" alt="posterior_collapse" style="zoom:50%;" />
+
+#### Understanding Posterior Collapse by Mutual Information
+
+Let $$X$$ and $$Z$$ be random variables with respective distrbutions $$p(x)$$ and $$p(z)$$, the mutual information between $$X$$ and $$Z$$ is defined as
+
+$$
+I(X; Z) = D_{\mathtt{KL}}(p(x, z) \vert \vert p(x)p(z)).
+$$
+
+The mutual information measure the independence between $$X$$ and $$Z$$. If $$I(X;Y)=0$$, then $$X$$ and $$Y$$ are independent.
+
+Define 
+
+$$
+q_{\mathcal{D}, \phi}(x, z) = q_{\phi}(z \vert x) p_{\mathcal{D}}(x)
+$$
+
+the aggregated posterior 
+
+$$
+q_{\phi}(z) = \int_{x} q_{\phi}(z \vert x) p_{\mathcal{D}}(x) \mathtt{d} x.
+$$
+
+the expectation of ELBO w.r.t. $$p_{D}(x)$$ is
+
+$$
+\mathbb{E}_{p_{\mathcal{D}}(x)}[\mathbb{E}_{q_{\phi}(z \vert x)}[\log p_{\theta}(x \vert z)]] - \mathbb{E}_{p_{\mathcal{D}}(x)}[D_{\mathtt{KL}}(q_{\phi}(z \vert x)\vert\vert p(z))]
+$$
+
+where the second term can be rewritten as
+
+$$
+\begin{aligned}
+\int_{x}p_{D}(x)\int_{z} q_{\phi}(z \vert x)\log \frac{q_{\phi}(z \vert x)}{p(z)} \mathtt{d}z \mathtt{d}x &= \int_{x}\int_{z} q_{\mathcal{D}, \phi}(x, z)\log \left(\frac{q_{\phi}(z \vert x)p_{\mathcal{D}}(x)}{q_{\phi}(z)p_{\mathcal{D}}(x)} \cdot \frac{q_{\phi}(z)}{p(z)} \right)\mathtt{d}z\mathtt{d}x \\
+& = \int_{x}\int_{z} q_{\mathcal{D}, \phi}(x, z)\log \frac{q_{\mathcal{D}, \phi}(x, z)}{q_{\phi}(z)p_{\mathcal{D}(x)}} \mathtt{d}z\mathtt{d}x + \int_{z}q_{\phi}(z)\log\frac{q_{\phi}(z)}{p(z)}\mathtt{d}z \\
+&= I(X; Z) + D_{\mathtt{KL}}(q_{\phi}(z)\vert \vert p(z)).
+\end{aligned}
+$$
+
+Therefore, maximizing the ELBO simultaneously 
+
+* maximizes the conditional likelihood;
+* minimizes the mutual information between $$X$$ and $$Z$$;
+* minimizes the KL-divergence between  the aggregated posterior $$q_{\phi}(z)$$ and the prior $$p(z)$$.
+
+The secod goal may lead to the independence between latent variable $$z$$ and input $$x$$.
+
+When posterior collapse happens, it may also achieve the optimal ELBO. To see this, we note that
+
+$$
+\mathbb{E}_{p_{\mathcal{D}}(x)}[\log p_{\theta}(x)] \geq \mathbb{E}_{p_{D}(x)}[\mathbb{E}_{q_{\phi}(z \vert x)}\log p_{\theta}(x \vert z)] - \mathbb{E}_{p_{\mathcal{D}}(x)}[D_{\mathtt{KL}}(q_{\phi}(z \vert x)\vert\vert p(z))] := \mathcal{E}(\theta, \phi).
+$$
+
+Suppose 
+
+$$
+p_{\theta^{*}}(x \vert z) = p_{\mathcal{D}}(x) \quad \text{and} \quad q_{\phi^{*}}(z \vert x) = p(z).
+$$
+
+we have
+
+$$
+\mathcal{E}(\theta^{*}, \phi^{*}) = \mathbb{E}_{p_{\mathcal{D}}(x)}[\log p_{D}(x)] = -H(X)
+$$
+
+and 
+
+$$
+\mathcal{E}(\theta, \phi) \leq \mathbb{E}_{p_{\mathcal{D}}(x)}[\log p_{\theta}(x)]  = -H(X) - D_{\mathtt{KL}}(p_{D} \vert \vert p_{\theta}(x)) \leq -H(X) = \mathcal{E}(\theta^{*}, \phi^{*})
+$$
+
+That is $$\theta^{*}$$ and $$\phi^{*}$$ that cause the posterior collapse yield the optimal ELBO.
+
+There are several solutions  to address the posterior collapse, including
+
+* KL annealing
+* Lower bounding the rate
+* Free bits
+* Adding skip connections
+* Alternative objectives (InfoVAE, $$\beta$$-VAE)
+
 # Reference
 
 1. Bishop, C. M. (2006). *Pattern Recognition and Machine Learning* . New York: springer.
 2. Scott Linderman. [Varitional Autoencoders](https://slinderman.github.io/stats305c/vaes/). Stats 305C(2026). 
 3. Kingma, D. P. (2013). Auto-encoding variational bayes. *arXiv preprint arXiv:1312.6114*.
 4. Lopez, R., Regier, J., Cole, M. B., Jordan, M. I., & Yosef, N. (2018). Deep generative modeling for single-cell transcriptomics. *Nature methods*, *15*(12), 1053-1058.
+5. Murphy, K. P. (2023). *Probabilistic machine learning: Advanced topics*. MIT press.
